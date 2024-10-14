@@ -4,19 +4,34 @@ body {
   }
   
   .hero-section {
-    background: linear-gradient(to right, #52b788, #4c9a92); /* Blue-green tone added */
+    background-image: url('main5.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    position: relative; /* Allows positioning of the caption */
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-size: 0.8rem; /* Small font size */
+    color: rgba(255, 255, 255, 0.8); /* Light color with some transparency */
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: adds readability on light backgrounds */
+}
+
   
   .navbar-brand {
     font-weight: bold;
   }
   
   .partner-bar {
-    background-color: #4c9a92; /* Blue-green secondary color */
+    background-color: #ffffff; /* Blue-green secondary color */
     padding: 10px;
     color: white;
     text-align: center;
@@ -45,7 +60,7 @@ body {
   }
   
   img {
-    max-width: 100%;
+
     height: auto;
     transition: transform 0.3s ease-in-out;
   }
@@ -115,3 +130,94 @@ body {
     visibility: visible;
   }
   
+
+  .research-abstract {
+    text-align: left; /* Left align the text */
+    line-height: 1.6; /* Improve readability with increased line height */
+    margin-top: 20px; /* Add space above the abstract */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+  }
+  
+  .research-abstract p {
+    margin-bottom: 15px; /* Add space between paragraphs */
+  }
+  
+  .research-abstract h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .research-buttons a {
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .research-buttons i {
+    margin-right: 8px;
+  }
+    
+.partner-logo{
+  height: 100px;
+}
+  
+
+#cofounders .card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+#cofounders .card:hover {
+  transform: scale(1.05);
+}
+
+.cofounder-img {
+  height: auto; /* Set the fixed height */
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Ensures the full image fits within the height */
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+.card-title {
+  color: #4c9a92; /* Blue-green secondary color for card titles */
+  font-size: 1.25rem;
+  margin-top: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.award-banner {
+  background-color: #4c9a92; /* Adjust this to fit your website’s theme */
+  color: #ffffff;
+  padding: 60px 0; /* Adds more height, similar to the Features section */
+}
+
+.award-banner h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.award-banner p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award-banner i {
+  margin-right: 10px;
+  color: #ffd700; /* Gold color for the award icon */
+}
+
+.tech-icon {
+  color: #4c9a92; /* Match this color with your theme */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+
