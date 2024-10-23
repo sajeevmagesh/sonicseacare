@@ -133,25 +133,25 @@
           <h2 class="animate__animated animate__fadeInLeft">Our Research</h2>
           <div class="research-abstract animate__animated animate__fadeInLeft">
             <p>
-              Harmful algal blooms (HABs) pose significant threats to aquatic ecosystems, public health, and local economies by degrading water quality, causing fish kills, and producing harmful toxins. Traditional methods of detecting and mitigating HABs are often labor-intensive and expensive, targeting only smaller water bodies. Additionally, many detection systems currently work on a microbial scale or focus only on detection rather than species classification.
+              Harmful algal blooms (HABs) pose significant threats to aquatic ecosystems, public health, and local economies by degrading water quality, causing fish kills, and producing harmful toxins. Traditional methods of detecting and mitigating HABs are often labor-intensive and expensive, targeting only smaller water bodies. Additionally, many detection systems currently work on a microbial scale or focus only on detection rather than classification.
             </p>
             <p>
-              Existing research indicates that ultrasonic waves at specific frequencies can effectively destroy algal cells, but current devices are limited to utilizing a fixed ultrasonic frequency. This project leverages machine learning to locate and classify multiple types of oceanic HABs, utilizing ultrasonic emissions at varied frequencies to eliminate each targeted HAB.
+              Existing research indicates that ultrasonic waves at specific frequencies can effectively destroy algal cells, but upscaling is necessary before implementation in the field becomes practical. We address this by leveraging machine learning to locate and classify multiple types of oceanic HABs and then outputting ultrasonic emissions at varied frequencies corresponding to each targeted HAB.
             </p>
             <p>
-              The system analyzes satellite images with convolutional neural networks to identify and categorize different types of harmful algae, allowing for rapid, large-scale monitoring of water bodies and providing timely data for environmental management. After the visual processing, we identify the optimal ultrasonic wave frequency for each identified HAB and emit it through a transducer. Our technique ensures that other marine life is not affected by accounting for the hearing frequency ranges of various ocean-dwelling organisms.
+              The system analyzes satellite images with a convolutional neural network (CNN) to identify and categorize different types of harmful algae, allowing for rapid, large-scale monitoring of water bodies and providing timely data for environmental management. To train the CNN, we also construct a novel dataset containing 4998 satellite images of algal blooms along the west coast of North America. After the visual processing, we identify the optimal ultrasonic wave frequency for each identified HAB. Our model successfully identifies eight different algal genera with an accuracy of 98.2%.
             </p>
             <p>
-              We develop a prototype consisting of two parts: a drone for autonomous scanning across the ocean, and a flotation device for treatment. Our prototype successfully combines satellite-based detection with ultrasonic mitigation, demonstrating the practical application of this dual approach. Preliminary field tests indicate the prototype's effectiveness in identifying and reducing oceanic HABs. This scalable and eco-friendly solution improves HAB management by supporting multiple species and applying ultrasonic mitigation towards the ocean, contributing to the protection of aquatic environments and public health.
+              To tackle practical application, we propose a prototype to implement our machine learning model for algal classification with an ultrasonic irradiation device. It consists of two parts: a drone for autonomous scanning across the ocean, and an underwater device for treatment. Thus, we demonstrate the potential of machine learning to advance ultrasonic mitigation towards large-scale implementation.
             </p>
           </div>
-  
+
           <!-- Embed the Research Paper PDF -->
           <div class="pdf-embed mt-4">
             <h3>Research Paper</h3>
             <embed src="Algal_Blooms_Paper2.pdf" type="application/pdf" width="100%" height="600px" />
           </div>
-  
+
           <!-- Embed the Research Slideshow PDF -->
           <div class="pdf-embed mt-4">
             <h3>Research Slideshow</h3>
@@ -161,6 +161,7 @@
       </div>
     </div>
   </section>
+
 
   
 <!-- Co-Founders Section -->
